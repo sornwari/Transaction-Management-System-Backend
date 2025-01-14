@@ -9,3 +9,15 @@ C:\Bluewavetech\TMS-Backend\ViewModel\obj\Debug\net8.0\ViewModel.dll
 C:\Bluewavetech\TMS-Backend\ViewModel\obj\Debug\net8.0\refint\ViewModel.dll
 C:\Bluewavetech\TMS-Backend\ViewModel\obj\Debug\net8.0\ViewModel.pdb
 C:\Bluewavetech\TMS-Backend\ViewModel\obj\Debug\net8.0\ref\ViewModel.dll
+C:\Bluewavetech\Transaction-Management-System-Backend\ViewModel\bin\Debug\net8.0\ViewModel.deps.json
+C:\Bluewavetech\Transaction-Management-System-Backend\ViewModel\bin\Debug\net8.0\ViewModel.dll
+C:\Bluewavetech\Transaction-Management-System-Backend\ViewModel\bin\Debug\net8.0\ViewModel.pdb
+C:\Bluewavetech\Transaction-Management-System-Backend\ViewModel\obj\Debug\net8.0\ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bluewavetech\Transaction-Management-System-Backend\ViewModel\obj\Debug\net8.0\ViewModel.AssemblyInfoInputs.cache
+C:\Bluewavetech\Transaction-Management-System-Backend\ViewModel\obj\Debug\net8.0\ViewModel.AssemblyInfo.cs
+C:\Bluewavetech\Transaction-Management-System-Backend\ViewModel\obj\Debug\net8.0\ViewModel.csproj.CoreCompileInputs.cache
+C:\Bluewavetech\Transaction-Management-System-Backend\ViewModel\obj\Debug\net8.0\ViewModel.sourcelink.json
+C:\Bluewavetech\Transaction-Management-System-Backend\ViewModel\obj\Debug\net8.0\ViewModel.dll
+C:\Bluewavetech\Transaction-Management-System-Backend\ViewModel\obj\Debug\net8.0\refint\ViewModel.dll
+C:\Bluewavetech\Transaction-Management-System-Backend\ViewModel\obj\Debug\net8.0\ViewModel.pdb
+C:\Bluewavetech\Transaction-Management-System-Backend\ViewModel\obj\Debug\net8.0\ref\ViewModel.dll

@@ -24,7 +24,7 @@ namespace TMS_Backend.Controllers
         [Route("login")]
         public async Task<ActionResult> Login([FromBody] LoginViewModel loginModel)
         {
-            if (string.IsNullOrEmpty(loginModel.UserName) || string.IsNullOrEmpty(loginModel.Password))
+            if (string.IsNullOrEmpty(loginModel.Username) || string.IsNullOrEmpty(loginModel.Password))
             {
                 return BadRequest("Please input Username and Password");
             }
@@ -36,7 +36,18 @@ namespace TMS_Backend.Controllers
                 return NotFound("User not found");
             }
             var token = await _authService.GenerateJwtToken();
-            return Ok(token);
+            var response = new LoginSuccessViewModel
+            {
+                User = new UserViewModel
+                {
+                    Name = user.Name,
+                    UserName = user.UserName,
+                    Password = user.Password,
+                    Role = user.Role
+                },
+                Token = token
+            };
+            return Ok(response);
         }
 
 

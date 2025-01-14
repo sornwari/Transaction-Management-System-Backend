@@ -4042,11 +4042,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Bluewavetech\\TMS-Backend\\Database\\Database.csproj",
+      "projectUniqueName": "C:\\Bluewavetech\\Transaction-Management-System-Backend\\Database\\Database.csproj",
       "projectName": "Database",
-      "projectPath": "C:\\Bluewavetech\\TMS-Backend\\Database\\Database.csproj",
+      "projectPath": "C:\\Bluewavetech\\Transaction-Management-System-Backend\\Database\\Database.csproj",
       "packagesPath": "C:\\Users\\SornW\\.nuget\\packages\\",
-      "outputPath": "C:\\Bluewavetech\\TMS-Backend\\Database\\obj\\",
+      "outputPath": "C:\\Bluewavetech\\Transaction-Management-System-Backend\\Database\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

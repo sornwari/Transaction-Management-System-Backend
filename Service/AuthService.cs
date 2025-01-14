@@ -23,7 +23,7 @@ namespace Service
         {
             try
             {
-                var user = await _db.User.Where(x => x.UserName == loginModel.UserName && x.Password == loginModel.Password).FirstOrDefaultAsync();
+                var user = await _db.User.Where(x => x.UserName == loginModel.Username && x.Password == loginModel.Password).FirstOrDefaultAsync();
                 return user;
             }
             catch (Exception ex)

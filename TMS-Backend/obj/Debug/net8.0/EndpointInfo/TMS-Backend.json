@@ -54,7 +54,7 @@
       "LoginViewModel": {
         "type": "object",
         "properties": {
-          "userName": {
+          "username": {
             "type": "string",
             "nullable": true
           },
