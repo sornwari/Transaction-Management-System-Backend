@@ -1,0 +1,11 @@
+C:\Bluewavetech\TMS-Backend\ViewModel\bin\Debug\net8.0\ViewModel.deps.json
+C:\Bluewavetech\TMS-Backend\ViewModel\bin\Debug\net8.0\ViewModel.dll
+C:\Bluewavetech\TMS-Backend\ViewModel\bin\Debug\net8.0\ViewModel.pdb
+C:\Bluewavetech\TMS-Backend\ViewModel\obj\Debug\net8.0\ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bluewavetech\TMS-Backend\ViewModel\obj\Debug\net8.0\ViewModel.AssemblyInfoInputs.cache
+C:\Bluewavetech\TMS-Backend\ViewModel\obj\Debug\net8.0\ViewModel.AssemblyInfo.cs
+C:\Bluewavetech\TMS-Backend\ViewModel\obj\Debug\net8.0\ViewModel.csproj.CoreCompileInputs.cache
+C:\Bluewavetech\TMS-Backend\ViewModel\obj\Debug\net8.0\ViewModel.dll
+C:\Bluewavetech\TMS-Backend\ViewModel\obj\Debug\net8.0\refint\ViewModel.dll
+C:\Bluewavetech\TMS-Backend\ViewModel\obj\Debug\net8.0\ViewModel.pdb
+C:\Bluewavetech\TMS-Backend\ViewModel\obj\Debug\net8.0\ref\ViewModel.dll

@@ -1,0 +1,14 @@
+C:\Bluewavetech\TMS-Backend\Database\bin\Debug\net8.0\Database.deps.json
+C:\Bluewavetech\TMS-Backend\Database\bin\Debug\net8.0\Database.runtimeconfig.json
+C:\Bluewavetech\TMS-Backend\Database\bin\Debug\net8.0\Database.dll
+C:\Bluewavetech\TMS-Backend\Database\bin\Debug\net8.0\Database.pdb
+C:\Bluewavetech\TMS-Backend\Database\obj\Debug\net8.0\Database.csproj.AssemblyReference.cache
+C:\Bluewavetech\TMS-Backend\Database\obj\Debug\net8.0\Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bluewavetech\TMS-Backend\Database\obj\Debug\net8.0\Database.AssemblyInfoInputs.cache
+C:\Bluewavetech\TMS-Backend\Database\obj\Debug\net8.0\Database.AssemblyInfo.cs
+C:\Bluewavetech\TMS-Backend\Database\obj\Debug\net8.0\Database.csproj.CoreCompileInputs.cache
+C:\Bluewavetech\TMS-Backend\Database\obj\Debug\net8.0\Database.dll
+C:\Bluewavetech\TMS-Backend\Database\obj\Debug\net8.0\refint\Database.dll
+C:\Bluewavetech\TMS-Backend\Database\obj\Debug\net8.0\Database.pdb
+C:\Bluewavetech\TMS-Backend\Database\obj\Debug\net8.0\Database.genruntimeconfig.cache
+C:\Bluewavetech\TMS-Backend\Database\obj\Debug\net8.0\ref\Database.dll

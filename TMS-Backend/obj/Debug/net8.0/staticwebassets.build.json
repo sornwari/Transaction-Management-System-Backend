@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "G9ErvoPWbwojsQVZcfpoGiRAN38sU5QL+amejDkyeHw=",
+  "Source": "TMS-Backend",
+  "BasePath": "_content/TMS-Backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
