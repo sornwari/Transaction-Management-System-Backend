@@ -38,13 +38,7 @@ namespace TMS_Backend.Controllers
             var token = await _authService.GenerateJwtToken();
             var response = new LoginSuccessViewModel
             {
-                User = new UserViewModel
-                {
-                    Name = user.Name,
-                    UserName = user.UserName,
-                    Password = user.Password,
-                    Role = user.Role
-                },
+                User = user,
                 Token = token
             };
             return Ok(response);

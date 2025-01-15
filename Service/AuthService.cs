@@ -19,12 +19,26 @@ namespace Service
             _configuration = configuration;
         }
 
-        public async Task<User> CheckLogin(LoginViewModel loginModel)
+        public async Task<UserViewModel?> CheckLogin(LoginViewModel loginModel)
         {
             try
             {
-                var user = await _db.User.Where(x => x.UserName == loginModel.Username && x.Password == loginModel.Password).FirstOrDefaultAsync();
-                return user;
+                var query = from user in _db.User
+                            join role in _db.Role on user.RoleId equals role.Id
+                            where user.UserName == loginModel.Username && user.Password == loginModel.Password
+                            select new UserViewModel
+                            {
+                                Id = user.Id,
+                                Name = user.Name,
+                                UserName = user.UserName,
+                                Password = user.Password,
+                                Role = new RoleViewModel
+                                {
+                                    Id = role.Id,
+                                    Name = role.Name,
+                                }
+                            };
+                return await query.FirstOrDefaultAsync();
             }
             catch (Exception ex)
             {
