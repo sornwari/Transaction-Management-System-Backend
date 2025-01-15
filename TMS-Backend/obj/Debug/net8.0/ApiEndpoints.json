@@ -101,15 +101,15 @@
   },
   {
     "ContainingType": "TMS_Backend.Controllers.TransactionController",
-    "Method": "CreateUser",
-    "RelativePath": "Transaction/createUser",
+    "Method": "CreateTransaction",
+    "RelativePath": "Transaction/createTransaction",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "crateModel",
-        "Type": "Database.CreateUserViewModel",
+        "Type": "Database.CreateTransactionViewModel",
         "IsRequired": true
       }
     ],
@@ -117,8 +117,8 @@
   },
   {
     "ContainingType": "TMS_Backend.Controllers.TransactionController",
-    "Method": "DeleteUser",
-    "RelativePath": "Transaction/deleteUser/{Id}",
+    "Method": "DeleteTransaction",
+    "RelativePath": "Transaction/deleteTransaction/{Id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -133,15 +133,15 @@
   },
   {
     "ContainingType": "TMS_Backend.Controllers.TransactionController",
-    "Method": "Login",
-    "RelativePath": "Transaction/searchUser",
+    "Method": "SearchTransactions",
+    "RelativePath": "Transaction/searchTransaction",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "searchModel",
-        "Type": "Database.SearchUsersViewModel",
+        "Type": "Database.SearchTransactionsViewModel",
         "IsRequired": true
       }
     ],
@@ -149,15 +149,15 @@
   },
   {
     "ContainingType": "TMS_Backend.Controllers.TransactionController",
-    "Method": "UpdateUser",
-    "RelativePath": "Transaction/updateUser",
+    "Method": "UpdateTransaction",
+    "RelativePath": "Transaction/updateTransaction",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "updateModel",
-        "Type": "Database.UpdateUserViewModel",
+        "Type": "Database.UpdateTransactionViewModel",
         "IsRequired": true
       }
     ],

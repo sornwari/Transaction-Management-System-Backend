@@ -176,7 +176,7 @@
         }
       }
     },
-    "/Transaction/searchUser": {
+    "/Transaction/searchTransaction": {
       "post": {
         "tags": [
           "Transaction"
@@ -185,17 +185,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/SearchUsersViewModel"
+                "$ref": "#/components/schemas/SearchTransactionsViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/SearchUsersViewModel"
+                "$ref": "#/components/schemas/SearchTransactionsViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/SearchUsersViewModel"
+                "$ref": "#/components/schemas/SearchTransactionsViewModel"
               }
             }
           }
@@ -207,7 +207,7 @@
         }
       }
     },
-    "/Transaction/createUser": {
+    "/Transaction/createTransaction": {
       "post": {
         "tags": [
           "Transaction"
@@ -216,17 +216,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateUserViewModel"
+                "$ref": "#/components/schemas/CreateTransactionViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateUserViewModel"
+                "$ref": "#/components/schemas/CreateTransactionViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateUserViewModel"
+                "$ref": "#/components/schemas/CreateTransactionViewModel"
               }
             }
           }
@@ -238,7 +238,7 @@
         }
       }
     },
-    "/Transaction/updateUser": {
+    "/Transaction/updateTransaction": {
       "post": {
         "tags": [
           "Transaction"
@@ -247,17 +247,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateUserViewModel"
+                "$ref": "#/components/schemas/UpdateTransactionViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateUserViewModel"
+                "$ref": "#/components/schemas/UpdateTransactionViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateUserViewModel"
+                "$ref": "#/components/schemas/UpdateTransactionViewModel"
               }
             }
           }
@@ -269,7 +269,7 @@
         }
       }
     },
-    "/Transaction/deleteUser/{Id}": {
+    "/Transaction/deleteTransaction/{Id}": {
       "get": {
         "tags": [
           "Transaction"
@@ -429,6 +429,36 @@
         },
         "additionalProperties": false
       },
+      "CreateTransactionViewModel": {
+        "type": "object",
+        "properties": {
+          "accountNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "transactionName": {
+            "type": "string",
+            "nullable": true
+          },
+          "transactionType": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "number",
+            "format": "double"
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "createBy": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateUserViewModel": {
         "type": "object",
         "properties": {
@@ -483,6 +513,42 @@
         },
         "additionalProperties": false
       },
+      "SearchTransactionsViewModel": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "accountNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "transactionName": {
+            "type": "string",
+            "nullable": true
+          },
+          "transactionType": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "fromDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "toDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "SearchUsersViewModel": {
         "type": "object",
         "properties": {
@@ -529,6 +595,40 @@
           "userId": {
             "type": "integer",
             "format": "int32"
+          },
+          "updateBy": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateTransactionViewModel": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "accountNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "transactionName": {
+            "type": "string",
+            "nullable": true
+          },
+          "transactionType": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "number",
+            "format": "double"
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
           },
           "updateBy": {
             "type": "string",

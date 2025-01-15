@@ -33,7 +33,6 @@ namespace Service
                 {
                     utcDateTimeTo = DateTime.SpecifyKind(searchModel.ToDate.Value, DateTimeKind.Utc);
                 }
-                var ads = 0;
                 var query = from user in _db.User
                             join role in _db.Role on user.RoleId equals role.Id
                             where (searchModel.UserId == 0 || user.Id == searchModel.UserId)

@@ -25,38 +25,38 @@ namespace TMS_Backend.Controllers
         }
 
         [HttpPost]
-        [Route("searchUser")]
+        [Route("searchTransaction")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        public async Task<ActionResult> Login([FromBody] SearchUsersViewModel searchModel)
+        public async Task<ActionResult> SearchTransactions([FromBody] SearchTransactionsViewModel searchModel)
         {
-            var response = await _userService.SearchUsers(searchModel);
+            var response = await _transactionService.SearchTransactions(searchModel);
             return Ok(response);
         }
 
         [HttpPost]
-        [Route("createUser")]
+        [Route("createTransaction")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        public async Task<ActionResult> CreateUser([FromBody] CreateUserViewModel crateModel)
+        public async Task<ActionResult> CreateTransaction([FromBody] CreateTransactionViewModel crateModel)
         {
-            var response = await _userService.CreateUser(crateModel);
+            var response = await _transactionService.CreateTransaction(crateModel);
             return Ok(response);
         }
 
         [HttpPost]
-        [Route("updateUser")]
+        [Route("updateTransaction")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        public async Task<ActionResult> UpdateUser([FromBody] UpdateUserViewModel updateModel)
+        public async Task<ActionResult> UpdateTransaction([FromBody] UpdateTransactionViewModel updateModel)
         {
-            var response = await _userService.UpdateUser(updateModel);
+            var response = await _transactionService.UpdateTransaction(updateModel);
             return Ok(response);
         }
 
         [HttpGet]
-        [Route("deleteUser/{Id}")]
+        [Route("deleteTransaction/{Id}")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        public async Task<ActionResult> DeleteUser(int Id)
+        public async Task<ActionResult> DeleteTransaction(int Id)
         {
-            var response = await _userService.DeleteUser(Id);
+            var response = await _transactionService.DeleteTransaction(Id);
             return Ok(response);
         }
 
