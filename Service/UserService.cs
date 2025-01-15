@@ -36,7 +36,8 @@ namespace Service
                 var ads = 0;
                 var query = from user in _db.User
                             join role in _db.Role on user.RoleId equals role.Id
-                            where (string.IsNullOrEmpty(searchModel.UserName) || user.UserName.ToLower() == searchModel.UserName.ToLower())
+                            where (searchModel.UserId == 0 || user.Id == searchModel.UserId)
+                            && (string.IsNullOrEmpty(searchModel.UserName) || user.UserName.ToLower() == searchModel.UserName.ToLower())
                             && (string.IsNullOrEmpty(searchModel.Name) || user.Name.ToLower() == searchModel.Name.ToLower())
                             && (string.IsNullOrEmpty(searchModel.RoleName) || role.Name == searchModel.RoleName)
                             && (searchModel.FromDate == null || user.UpdateDate >= utcDateTimeFrom)

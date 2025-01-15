@@ -9,23 +9,25 @@ namespace TMS_Backend.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class UserController : Controller
+    public class TransactionController : Controller
     {
         private readonly AuthService _authService;
         private readonly UserService _userService;
+        private readonly TransactionService _transactionService;
         private readonly ILogger _logger;
 
-        public UserController(AuthService authService, UserService userService, ILogger<UserController> logger)
+        public TransactionController(AuthService authService, UserService userService, TransactionService transactionService, ILogger<TransactionController> logger)
         {
             _authService = authService;
             _userService = userService;
+            _transactionService = transactionService;
             _logger = logger;
         }
 
         [HttpPost]
         [Route("searchUser")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        public async Task<ActionResult> SearchUsers([FromBody] SearchUsersViewModel searchModel)
+        public async Task<ActionResult> Login([FromBody] SearchUsersViewModel searchModel)
         {
             var response = await _userService.SearchUsers(searchModel);
             return Ok(response);

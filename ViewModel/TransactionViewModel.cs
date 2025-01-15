@@ -2,27 +2,32 @@
 
 namespace Database
 {
-    public class UserViewModel
+    public class TransactionViewModel
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string UserName { get; set; }
-        public string Password { get; set; }
-        public RoleViewModel Role { get; set; }
+        public int UserId { get; set; }
+        public string TransactionName { get; set; }
+        public string TransactionType { get; set; }
+        public decimal Amount { get; set; }
+        public string Status { get; set; }
+
 
     }
 
-    public class SearchUsersViewModel
+    public class SearchTransactionsViewModel
     {
-        public int UserId { get; set; }
+        public string TransactionName { get; set; }
+        public string TransactionType { get; set; }
+        public decimal Amount { get; set; }
         public string Name { get; set; }
         public string UserName { get; set; }
         public string RoleName { get; set; }
+        public string Status { get; set; }
         public DateTime? FromDate { get; set; }
         public DateTime? ToDate { get; set; }
 
     }
-    public class CreateUserViewModel
+    public class CreateTransactionViewModel
     {
         public string Name { get; set; }
         public string UserName { get; set; }
@@ -31,7 +36,7 @@ namespace Database
         public string CreateBy { get; set; }
 
     }
-    public class UpdateUserViewModel
+    public class UpdateTransactionViewModel
     {
         public int Id { get; set; }
         public string Name { get; set; }

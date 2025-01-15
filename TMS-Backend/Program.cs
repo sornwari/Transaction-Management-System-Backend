@@ -34,6 +34,8 @@ builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddTransient<AuthService>();
 builder.Services.AddTransient<UserService>();
 builder.Services.AddTransient<RoleService>();
+builder.Services.AddTransient<TransactionService>();
+builder.Services.AddTransient<AccountService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

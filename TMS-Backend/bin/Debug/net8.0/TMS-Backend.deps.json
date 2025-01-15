@@ -940,7 +940,10 @@
           "System.IdentityModel.Tokens.Jwt": "8.3.0"
         },
         "runtime": {
-          "Database.dll": {}
+          "Database.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Service/1.0.0": {
@@ -953,12 +956,18 @@
           "ViewModel": "1.0.0"
         },
         "runtime": {
-          "Service.dll": {}
+          "Service.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ViewModel/1.0.0": {
         "runtime": {
-          "ViewModel.dll": {}
+          "ViewModel.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

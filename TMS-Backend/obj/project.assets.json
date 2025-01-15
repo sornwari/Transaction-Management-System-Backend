@@ -4534,19 +4534,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Warisorn\\.nuget\\packages\\": {}
+    "C:\\Users\\SornW\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Warisorn\\Documents\\GitHub\\Transaction-Management-System-Backend\\TMS-Backend\\TMS-Backend.csproj",
+      "projectUniqueName": "C:\\Bluewavetech\\Transaction-Management-System-Backend\\TMS-Backend\\TMS-Backend.csproj",
       "projectName": "TMS-Backend",
-      "projectPath": "C:\\Users\\Warisorn\\Documents\\GitHub\\Transaction-Management-System-Backend\\TMS-Backend\\TMS-Backend.csproj",
-      "packagesPath": "C:\\Users\\Warisorn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Warisorn\\Documents\\GitHub\\Transaction-Management-System-Backend\\TMS-Backend\\obj\\",
+      "projectPath": "C:\\Bluewavetech\\Transaction-Management-System-Backend\\TMS-Backend\\TMS-Backend.csproj",
+      "packagesPath": "C:\\Users\\SornW\\.nuget\\packages\\",
+      "outputPath": "C:\\Bluewavetech\\Transaction-Management-System-Backend\\TMS-Backend\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Warisorn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SornW\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4560,14 +4565,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Warisorn\\Documents\\GitHub\\Transaction-Management-System-Backend\\Database\\Database.csproj": {
-              "projectPath": "C:\\Users\\Warisorn\\Documents\\GitHub\\Transaction-Management-System-Backend\\Database\\Database.csproj"
+            "C:\\Bluewavetech\\Transaction-Management-System-Backend\\Database\\Database.csproj": {
+              "projectPath": "C:\\Bluewavetech\\Transaction-Management-System-Backend\\Database\\Database.csproj"
             },
-            "C:\\Users\\Warisorn\\Documents\\GitHub\\Transaction-Management-System-Backend\\Service\\Service.csproj": {
-              "projectPath": "C:\\Users\\Warisorn\\Documents\\GitHub\\Transaction-Management-System-Backend\\Service\\Service.csproj"
+            "C:\\Bluewavetech\\Transaction-Management-System-Backend\\Service\\Service.csproj": {
+              "projectPath": "C:\\Bluewavetech\\Transaction-Management-System-Backend\\Service\\Service.csproj"
             },
-            "C:\\Users\\Warisorn\\Documents\\GitHub\\Transaction-Management-System-Backend\\ViewModel\\ViewModel.csproj": {
-              "projectPath": "C:\\Users\\Warisorn\\Documents\\GitHub\\Transaction-Management-System-Backend\\ViewModel\\ViewModel.csproj"
+            "C:\\Bluewavetech\\Transaction-Management-System-Backend\\ViewModel\\ViewModel.csproj": {
+              "projectPath": "C:\\Bluewavetech\\Transaction-Management-System-Backend\\ViewModel\\ViewModel.csproj"
             }
           }
         }
@@ -4581,7 +4586,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -4633,7 +4639,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
