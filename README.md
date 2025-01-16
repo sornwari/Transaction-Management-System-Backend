@@ -52,9 +52,10 @@ The Transaction Management System Backend is a RESTful API designed to handle tr
 - `POST /Report/getReportTransaction` - Get transaction report
 
 ## Database schema
-
+```bash
 CREATE SCHEMA IF NOT EXISTS tms_schema;
-
+```
+```bash
 CREATE TABLE tms_schema.Account (
     Id SERIAL PRIMARY KEY,
     AccountNo VARCHAR(50) NOT NULL,
@@ -67,7 +68,9 @@ CREATE TABLE tms_schema.Account (
     UpdateDate TIMESTAMP,
     UpdateBy VARCHAR(50)
 );
+```
 
+```bash
 CREATE TABLE tms_schema.Role (
     Id SERIAL PRIMARY KEY,
     Name VARCHAR(100) NOT NULL,
@@ -76,7 +79,9 @@ CREATE TABLE tms_schema.Role (
     UpdateDate TIMESTAMP,
     UpdateBy VARCHAR(50)
 );
+```
 
+```bash
 CREATE TABLE tms_schema.Transaction (
     Id SERIAL PRIMARY KEY,
     AccountId INT NOT NULL,
@@ -91,7 +96,9 @@ CREATE TABLE tms_schema.Transaction (
     UpdateDate TIMESTAMP,
     UpdateBy VARCHAR(50)
 );
+```
 
+```bash
 CREATE TABLE tms_schema.User (
     Id SERIAL PRIMARY KEY,
     Name VARCHAR(100) NOT NULL,
@@ -103,3 +110,4 @@ CREATE TABLE tms_schema.User (
     UpdateDate TIMESTAMP,
     UpdateBy VARCHAR(50)
 );
+```
