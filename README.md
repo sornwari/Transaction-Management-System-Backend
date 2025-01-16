@@ -51,3 +51,55 @@ The Transaction Management System Backend is a RESTful API designed to handle tr
 - `POST /Report/getReportAccount` - Get account report
 - `POST /Report/getReportTransaction` - Get transaction report
 
+## Database schema
+
+CREATE SCHEMA IF NOT EXISTS tms_schema;
+
+CREATE TABLE tms_schema.Account (
+    Id SERIAL PRIMARY KEY,
+    AccountNo VARCHAR(50) NOT NULL,
+    UserId INT NOT NULL,
+    Balance DECIMAL(18, 2) NOT NULL,
+    Deposit DECIMAL(18, 2) NOT NULL,
+    Withdraw DECIMAL(18, 2) NOT NULL,
+    CreateDate TIMESTAMP NOT NULL,
+    CreateBy VARCHAR(50) NOT NULL,
+    UpdateDate TIMESTAMP,
+    UpdateBy VARCHAR(50)
+);
+
+CREATE TABLE tms_schema.Role (
+    Id SERIAL PRIMARY KEY,
+    Name VARCHAR(100) NOT NULL,
+    CreateDate TIMESTAMP NOT NULL,
+    CreateBy VARCHAR(50) NOT NULL,
+    UpdateDate TIMESTAMP,
+    UpdateBy VARCHAR(50)
+);
+
+CREATE TABLE tms_schema.Transaction (
+    Id SERIAL PRIMARY KEY,
+    AccountId INT NOT NULL,
+    TransactionName VARCHAR(100) NOT NULL,
+    TransactionType VARCHAR(50) NOT NULL,
+    Amount DECIMAL(18, 2) NOT NULL,
+    TotalBeforeTransaction DECIMAL(18, 2) NOT NULL,
+    TotalAfterTransaction DECIMAL(18, 2) NOT NULL,
+    Status VARCHAR(50) NOT NULL,
+    CreateDate TIMESTAMP NOT NULL,
+    CreateBy VARCHAR(50) NOT NULL,
+    UpdateDate TIMESTAMP,
+    UpdateBy VARCHAR(50)
+);
+
+CREATE TABLE tms_schema.User (
+    Id SERIAL PRIMARY KEY,
+    Name VARCHAR(100) NOT NULL,
+    UserName VARCHAR(100) NOT NULL UNIQUE,
+    Password VARCHAR(255) NOT NULL,
+    RoleId INT NOT NULL,
+    CreateDate TIMESTAMP NOT NULL,
+    CreateBy VARCHAR(50) NOT NULL,
+    UpdateDate TIMESTAMP,
+    UpdateBy VARCHAR(50)
+);
