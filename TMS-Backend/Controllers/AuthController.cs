@@ -44,34 +44,5 @@ namespace TMS_Backend.Controllers
             return Ok(response);
         }
 
-
-        [HttpGet]
-        [Route("test")]
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        public ActionResult Report()
-        {
-            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
-
-            using (var package = new ExcelPackage())
-            {
-                // Add a new worksheet
-                var worksheet = package.Workbook.Worksheets.Add("Sheet1");
-
-                // Populate the worksheet with some sample data
-                worksheet.Cells[1, 1].Value = "ID";
-                worksheet.Cells[1, 2].Value = "Name";
-                worksheet.Cells[2, 1].Value = 1;
-                worksheet.Cells[2, 2].Value = "John Doe";
-                worksheet.Cells[3, 1].Value = 2;
-                worksheet.Cells[3, 2].Value = "Jane Smith";
-
-                // Convert the Excel package to a byte array
-                var fileBytes = package.GetAsByteArray();
-
-                // Return the file as a downloadable Excel file
-                return File(fileBytes, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "report.xlsx");
-            }
-        }
-
     }
 }

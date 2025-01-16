@@ -44,7 +44,7 @@ namespace TMS_Backend.Controllers
             return Ok(response);
         }
 
-        [HttpPost]
+        [HttpPut]
         [Route("updateAccount")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<ActionResult> UpdateAccount([FromBody] UpdateAccountViewModel updateModel)
@@ -53,7 +53,7 @@ namespace TMS_Backend.Controllers
             return Ok(response);
         }
 
-        [HttpGet]
+        [HttpDelete]
         [Route("deleteAccount/{Id}")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<ActionResult> DeleteAccount(int Id)

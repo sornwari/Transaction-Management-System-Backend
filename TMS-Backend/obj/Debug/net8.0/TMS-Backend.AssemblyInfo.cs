@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TMS-Backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a1e744fb6617e84dcbfb4ada858fdb5ef2dd6ba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c212f7b203a3e2702df56645e761b29af9904afc")]
 [assembly: System.Reflection.AssemblyProductAttribute("TMS-Backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TMS-Backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
