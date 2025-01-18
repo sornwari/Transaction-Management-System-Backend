@@ -1,0 +1,230 @@
+[
+  {
+    "ContainingType": "TMS_Backend.Controllers.AccountController",
+    "Method": "CreateAccount",
+    "RelativePath": "Account/createAccount",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "crateModel",
+        "Type": "Database.CreateAccountViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TMS_Backend.Controllers.AccountController",
+    "Method": "DeleteAccount",
+    "RelativePath": "Account/deleteAccount/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TMS_Backend.Controllers.AccountController",
+    "Method": "SearchAccounts",
+    "RelativePath": "Account/searchAccount",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchModel",
+        "Type": "Database.SearchAccountsViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TMS_Backend.Controllers.AccountController",
+    "Method": "UpdateAccount",
+    "RelativePath": "Account/updateAccount",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateModel",
+        "Type": "Database.UpdateAccountViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TMS_Backend.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginModel",
+        "Type": "Database.LoginViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TMS_Backend.Controllers.AuthController",
+    "Method": "Report",
+    "RelativePath": "Auth/test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TMS_Backend.Controllers.RoleController",
+    "Method": "GetAllRoles",
+    "RelativePath": "Role/getRoles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TMS_Backend.Controllers.TransactionController",
+    "Method": "CreateTransaction",
+    "RelativePath": "Transaction/createTransaction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "crateModel",
+        "Type": "Database.CreateTransactionViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TMS_Backend.Controllers.TransactionController",
+    "Method": "DeleteTransaction",
+    "RelativePath": "Transaction/deleteTransaction/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TMS_Backend.Controllers.TransactionController",
+    "Method": "SearchTransactions",
+    "RelativePath": "Transaction/searchTransaction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchModel",
+        "Type": "Database.SearchTransactionsViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TMS_Backend.Controllers.TransactionController",
+    "Method": "UpdateTransaction",
+    "RelativePath": "Transaction/updateTransaction",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateModel",
+        "Type": "Database.UpdateTransactionViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TMS_Backend.Controllers.UserController",
+    "Method": "CreateUser",
+    "RelativePath": "User/createUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "crateModel",
+        "Type": "Database.CreateUserViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TMS_Backend.Controllers.UserController",
+    "Method": "DeleteUser",
+    "RelativePath": "User/deleteUser/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TMS_Backend.Controllers.UserController",
+    "Method": "SearchUsers",
+    "RelativePath": "User/searchUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchModel",
+        "Type": "Database.SearchUsersViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TMS_Backend.Controllers.UserController",
+    "Method": "UpdateUser",
+    "RelativePath": "User/updateUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateModel",
+        "Type": "Database.UpdateUserViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
