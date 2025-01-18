@@ -111,3 +111,32 @@ CREATE TABLE tms_schema.User (
     UpdateBy VARCHAR(50)
 );
 ```
+
+## Docker
+1. Install Docker:
+    - [Docker Desktop for Windows](https://docs.docker.com/desktop/install/windows-install/)
+    - Follow the installation instructions and ensure Docker is running.
+
+2. Build the Docker image:
+    ```bash
+    docker build -t tms-backend .
+    ```
+
+3. Run a container from the built image:
+    ```bash
+    docker run -d -p 7106:8080 --name tms-backend-container tms-backend
+    ```
+
+## .env
+
+if run Transaction-Management-System-Backend project by using Visual Studio
+you might have to change "VITE_APP_API_URL" in ".env" in Transaction-Management-System-Frontend to :
+    ```sh
+    VITE_APP_API_URL="https://localhost:7106"
+    ```
+
+if run Transaction-Management-System-Backend project by using docker
+you might have to change "VITE_APP_API_URL" in ".env" in Transaction-Management-System-Frontend to :
+    ```sh
+    VITE_APP_API_URL="http://localhost:7106"
+    ```
